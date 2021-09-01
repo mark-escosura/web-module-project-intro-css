@@ -26,7 +26,7 @@ body {
 ol, ul {
 	list-style: none;
 	}
-/* tables still need cellspacing="0" in the markup */
+/* tables still need cell spacing="0" in the markup */
 table {
 	border-collapse: separate;
 	border-spacing: 0;
@@ -47,9 +47,7 @@ blockquote, q {
     padding:0;
     margin:0;
     max-width:100%;
-    border: 1px solid grey;
 }
-    }
 /* General styles*/
 html {
     font-size:62.5%
@@ -57,12 +55,27 @@ html {
 body {
     font-size: 1.6rem;
     line-height:1.5;
-    color: #4f4f4f
+    color: #4f4f4f;
     font-family: 'Roboto Mono', monospace;
+    transition:2s;
 }
 
 h1{
     font-family: 'Chelsea Market', cursive;
+    font-size: 4rem;
+}
+h1:hover {
+    color:#DDB9A3;
+}
+h2 {
+    font-size: 1.5rem;
+    line-height: 3;
+}
+h2:hover {
+    color:#DDB9A3;
+}
+p:hover {
+    color:#DDB9A3;
 }
 a{
     font-family: 'Roboto Mono', monospace;
@@ -90,14 +103,29 @@ nav a{
 .orange {
     background-color: #FF764E;
     margin-left: 10%;
+    transition:2s;
+}
+.orange:hover {
+    background-color: #4f4f4f;
+    transition:2s;
 }
 .blue{
     background-color: #5Ed3eb;
-    margin: 0 24%;
+    margin: 0 25%;
+    transition:2s;
+}
+.blue:hover {
+    background-color: #4f4f4f;
+    transition:2s;
 }
 .yellow{
     background-color: #FFCD69;
     margin-right: 10%;
+    transition:2s;
+}
+.yellow:hover {
+    background-color: #4f4f4f;
+    transition:2s;
 }
 
 /*Titles Section Styles*/
@@ -109,7 +137,7 @@ nav a{
     display:inline-block;
 }
 .left{
-    width:30%;
+    width:25%;
     margin-left:5%;
 }
 .left img{
@@ -121,5 +149,86 @@ nav a{
 }
 .right div{
     position:absolute;
-    top:40%;
+    top: 30%;
+}
+
+/* First Section Styles */
+
+.box-container { 
+    margin: 0 5%;
+    text-align:center;
+    padding: 0;
+    background-color: #DDB9A3;
+}
+.box-container div p:hover {
+    color:#4f4f4f;
+}
+.box-container div {
+    padding: 0;
+}
+.box-container div p {
+    line-height: 1.6;
+    padding:1% 0;
+    font-size: 1.6rem;
+    color: #FFF;
+}
+
+/* Two-Images Section Styles */
+
+section .fire img{
+    display:block;
+    margin: auto;
+    height: 10%;
+    width: 10%;
+}
+section .fire .images-under-section {
+    margin-bottom: 5%;
+}
+section .fire p{
+    text-align: center;
+}
+
+span {
+    font-weight:bold;
+}
+
+/* Footer Image Styles */
+
+#footer-image-container { 
+    margin-top: 0%;
+    background-image: url('assets/footer_img.jpg');
+    height:50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+}
+
+/* Footer Section Styles */
+
+.footer-section {
+    padding-top:0;
+}
+.footer-section footer {
+    background-color: #F9E7DC;
+}
+.footer-section footer nav a {
+    display:inline-block;
+    width: 10%;
+    border-radius: 10px;
+    text-align:center;
+    color: #FFF;
+    
+}
+.orange {
+    background-color: #FF764E;
+    margin-left: 10%;
+}
+.blue{
+    background-color: #5Ed3eb;
+    margin: 0 24%;
+}
+.yellow{
+    background-color: #FFCD69;
+    margin-right: 10%;
 }
